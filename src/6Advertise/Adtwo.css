@@ -1,0 +1,64 @@
+.adful{
+    margin: 5%;
+    background: linear-gradient(to top,rgba(0,0,0,0.609),rgba(0,0,0,0.609)),url("../../assets/ad/bbb.jpg") ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.adhalf{
+    display: grid;
+    gap: 2rem;
+    padding: 4rem 4rem;
+   
+}
+.adname{
+    padding: 1rem;
+    padding-bottom: 0;
+}
+
+.nameone{
+color: white;
+padding-bottom: 1rem;
+}
+
+.nametwo{
+color: white;
+letter-spacing: 1px;
+}
+.advideo{
+    border: 2px solid white;
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    }
+    .v{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    @media screen and (max-width:500px) {
+       .adful{
+            margin-top: 8%;
+        }
+        .adhalf{
+            display: grid;
+            gap: 2rem;
+            padding: 1rem 1rem;  
+        }
+        .v{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+
+    @media screen and (min-width:700px) {
+.adhalf{
+    grid-template-columns: repeat(2,1fr);
+}
+    }

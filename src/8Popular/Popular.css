@@ -1,0 +1,64 @@
+.super{
+    margin: 5%; 
+  
+  }
+  
+  .poname{
+      color: white;
+      text-align: center;
+      padding-bottom: 2%;
+  }
+  .accbody{
+      display: flex;
+      align-items:start;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      
+  }
+  .bobby{
+      display: grid;
+      gap: 1rem;
+  }
+  .onebo{
+      width: 250px;
+      background:  rgb(30, 28, 28);
+      color: white;
+  }
+  
+  .pos{
+      height: 300px;
+      width: 100%;
+      &:hover{
+          box-shadow: 0 2px 4px 4px rgb(63, 61, 61);
+          transform: scale(1.08);
+          transition: transform 0.3s linear;
+      }
+  }
+  @media screen and (max-width:500px) {
+      .super{
+          display: grid;
+          align-items: center;
+          justify-content: center;
+      }
+      .poname{
+          color: white;
+          text-align: center;
+          padding-bottom: 3%;
+      }
+      .accbody{
+          display: grid;
+          grid-template-columns: repeat(1,1fr);
+          gap: 1rem;
+      }
+  
+      .onebo{
+          width: 100%px;
+          background:  rgb(30, 28, 28);
+          color: white;
+      }
+      .pos{
+          height: 300px;
+          width: 100%;
+      }
+  }
+  

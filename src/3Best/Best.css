@@ -1,0 +1,53 @@
+.bestfull{
+    margin:5%;
+    margin-top: 0;
+    }
+    .heading{
+        font-size:2rem;
+        color: white;
+        padding-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    .imgbo{
+    height: 120px;
+    }
+    .imgdubba{
+        transition:transform 0.3s linear;
+        &:hover{
+        transform: scale(1.1);
+        }
+    }
+    .cardone{
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10%;
+    margin-top: 0;
+    margin-bottom: 0;
+    gap: 1rem;
+    }
+    .cardbody{
+        background: black;
+    }
+    .cardname{
+        color: crimson;
+        text-align: center;
+    }
+    
+    @media screen and (min-width:520px) {
+    .cardone{
+         grid-template-columns: repeat(2,1fr);  
+        }
+    }
+    
+    @media screen and (min-width:750px) {
+        .cardone{
+             grid-template-columns: repeat(3,1fr); 
+            }
+        }
+    
+        @media screen and (min-width:1024px) {
+            .cardone{
+                 grid-template-columns: repeat(4,1fr);  
+                }
+            }

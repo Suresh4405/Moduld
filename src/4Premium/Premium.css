@@ -1,0 +1,103 @@
+.butty{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    
+    .ico{
+        color: crimson;
+font-size: 3rem;
+padding-bottom: 3%;
+    }
+}
+
+.re{
+    color: crimson;
+}
+.fullbo{
+    background: rgb(30, 28, 28);
+}
+.prebody{
+    margin: 5%;
+    margin-top: 2%;
+}
+.tinam{
+    color:rgb(221, 214, 214);
+    text-align: center;
+    padding: 0.5rem;
+
+}
+.headings{
+.firstu{
+    color: white;
+   .firstone{
+    padding-bottom: 3%;
+   }
+   .firsttwo{
+    padding-bottom: 3%;
+   }
+}
+
+.secondu{
+    color: rgb(129, 121, 121);
+}
+}
+
+.sliimg{
+    height:300px;
+    transition: transform  linear;
+    &:hover{
+        transform:translateY(-10px) ;
+    }
+
+    .imagee{
+        margin-left: 1rem;
+        height: 100%;
+        width: 90%;
+       
+    }
+}
+
+@media screen and (max-width:480px) {
+    .prebody{
+        margin: 10%;
+    }
+    .headings{
+        text-align: center;
+        .firstu{
+            color: white;
+           .firstone{
+            text-align: start;
+            padding-bottom: 0%;
+           }
+           .firsttwo{
+            padding-bottom: 3%;
+           }
+        }
+    }
+.sliimg{
+    height:300px;
+    .imagee{
+       width: 90%;
+        height: 100%;
+    }
+}
+}
+@media screen and (min-width:500px) {
+    .fullbo{
+        background: rgb(30, 28, 28);
+        margin: 5%;
+    }
+    .headings{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+.prebody{
+    margin: 2%;
+}
+}
